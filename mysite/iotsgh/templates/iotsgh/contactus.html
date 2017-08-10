@@ -1,0 +1,25 @@
+{% extends "iotsgh/mainhome.html" %}
+
+{% block content %}
+
+<p style="color: rgb(4, 144, 0); font-family: Garamond; font-size: 200%; padding-bottom: 110px; ">
+To contact us please send a email to mshr1994@gmail.com
+</p>
+
+<form method="post" action="/thank-you/">
+{% csrf_token %}
+<center>
+Name:<br> <input type="text" name="handle" value=""><br><br>
+Message:<br> <input class="messagebox" type="text" name="message" value=""><br><br>
+<input type="submit" value="Submit">
+</center>
+</form>
+
+<style type="text/css">
+	.messagebox{
+		height: 240px;
+		width: 840px;
+	}
+</style>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<title>IOTSGH</title>
+	<meta charset="utf-8"/>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" >	
+
+	<style type="text/css">
+		html {
+			min-height: 100%;
+			min-width: 100%
+		}
+		body {
+			min-height: 100%;
+			min-width: 100%;
+		}
+	</style>
+
+</head>
+
+<div class="container">
+<body class='body' style="background-color: #FFFFFF">
+	
+	<div class="title" style="background-color: rgb(4, 144, 0);">
+		<center>
+			<h1 style="color: rgb(255, 255, 255); font-family: Garamond;"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> IoT BASED WEATHER CONTROLLED SMART GREEN HOUSE</h1>
+		</center>
+	</div>
+
+	<div class="button-group" style="width: 100%" style="background-color: rgb(4, 144, 0);">
+		<a href="/"><button class="btn" style="width: 25%; font-family: Garamond;">Home</button></a>
+		<a href="/about-project/"><button class="btn" style="width: 25%; font-family: Garamond;">About Project</button></a>
+		<a href="/team-members/"><button class="btn" style="width: 25%; font-family: Garamond;">Team Members</button></a>
+		<a href="/contact-us/"><button class="btn" style="width: 25%; font-family: Garamond;">Contact Us</button></a>
+	</div>
+	<br>
+	<br>
+	<hr>
+
+	{% block content %}
+	{% endblock %}
+
+	<hr>
+
+	<!--footer-->
+	<div class="footer" style="background-color: rgb(4, 144, 0);">
+		<p class="left-footer" style="font-size: 130%; font-family: Garamond; color: rgb(255, 255, 255);">Follow Us:<br>SRIHARI RAO M<br>VISHWAS HA<br>YASHWANTH HP<br>TIPPESWAMY</p>
+		<p class="center-footer" style="font-size: 130%; font-family: Garamond; color: rgb(255, 255, 255);">Join US:<br>WAIT FOR MORE DETAILS ON THIS</p>
+		<p class="right-footer" style="font-size: 130%; font-family: Garamond; color: rgb(255, 255, 255);">What goes here?<br>Should think about it!</p>
+	</div>
+
+
+	<!--styling part -->
+	<style type="text/css">
+		.title {display: block;}
+		.title {padding: 30px 10px;}
+	</style>
+
+	<style type="text/css">
+		.button-group {display: block;}
+		.button-group {padding: 1px 0px; background-color: green; color: green;}
+	</style>
+
+	<style>
+		.btn {
+			background-color: green; /* Green */
+			border: 1px solid rgb(4, 144, 0);
+			color: #FFFFFF;
+			padding: 10px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 2px;
+			float: left;
+			}
+	</style>
+	<style type="text/css">
+		.btn {
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+		}
+
+		.btn:hover {
+			background-color: #049000; /* Green */
+			color: white;
+		}
+	</style>
+	<style type="text/css">
+		hr{
+			border-width: 2px;
+		}
+	</style>
+	<style type="text/css">
+		.footer{display: block;}
+		.footer {padding-top: 40px; padding-bottom: 90px; padding-left: 30px; padding-right: 30px;}
+		.left-footer {text-align: left; float: left;}
+		.center-footer {text-align: center;}
+		.right-footer {text-align: right; float: right;}
+	</style>
+
+</body>
+</div>
+</html>
